@@ -165,7 +165,7 @@ client.on("messageCreate", message => {
         .setThumbnail('https://cdn.discordapp.com/attachments/950756533476667422/958713266304073819/474323AA-4115-413B-A442-23B3F44CF8F2.png')
         
         var button1 = new Discord.MessageButton()
-            .setLabel("Richiedi una partnership")
+            .setLabel("Richiedi un permadeath")
             .setCustomId("apriTicket2")
             .setStyle("PRIMARY")
 
