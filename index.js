@@ -24,10 +24,10 @@ client.on('guildMemberAdd', async (member) => {
 })
 
 client.on("messageCreate", message => {
-    if (message.content == "!nuovoticket") {
+    if (message.content == "!ticket") {
         var embedticket = new Discord.MessageEmbed()
         .setColor('#c29436')
-        .setTitle('TICKET')
+        .setTitle('ASSISTENZA GENERALE')
         .setDescription('Clicca sul bottone per aprire un ticket')
         .setThumbnail('https://cdn.discordapp.com/attachments/950756533476667422/958713266304073819/474323AA-4115-413B-A442-23B3F44CF8F2.png')
         
@@ -53,7 +53,7 @@ client.on("interactionCreate", interaction => {
         interaction.guild.channels.create(interaction.user.username, {
             type: "text",
             topic: `User ID: ${interaction.user.id}`,
-            parent: "958713793901363260", //Settare la categoria,
+            parent: "958747174693376111", //Settare la categoria,
             permissionOverwrites: [
                 {
                     id: interaction.guild.id,
@@ -157,11 +157,11 @@ client.on("messageCreate", message => {
 })
 
 client.on("messageCreate", message => {
-    if (message.content == "!partner") {
+    if (message.content == "!perma") {
         var embedpartner = new Discord.MessageEmbed()
         .setColor('#c29436')
-        .setTitle('PARTNERSHIP')
-        .setDescription('Clicca sul bottone per richiedere una partnership')
+        .setTitle('PERMADEATH')
+        .setDescription('Clicca sul bottone per richiedere un permadeath')
         .setThumbnail('https://cdn.discordapp.com/attachments/950756533476667422/958713266304073819/474323AA-4115-413B-A442-23B3F44CF8F2.png')
         
         var button1 = new Discord.MessageButton()
@@ -186,7 +186,7 @@ client.on("interactionCreate", interaction => {
         interaction.guild.channels.create(interaction.user.username, {
             type: "text",
             topic: `User ID: ${interaction.user.id}`,
-            parent: "958713793901363260", //Settare la categoria,
+            parent: "958747174693376111", //Settare la categoria,
             permissionOverwrites: [
                 {
                     id: interaction.guild.id,
@@ -201,12 +201,12 @@ client.on("interactionCreate", interaction => {
                     allow: ["VIEW_CHANNEL"]
                 },
                 {
-                    id: "950075342884851812", //id addetto partner
+                    id: "910836547589373962", //id staff
                     allow: ["VIEW_CHANNEL"]
                 }
             ]
         }).then(canale => {
-            canale.send("Grazie per aver aperto un ticket, uno <@&950075342884851812> ti risponderà a breve!")
+            canale.send("Grazie per aver aperto un ticket, uno <@&910836547589373962> ti risponderà a breve!")
         })
     }
 })
@@ -322,7 +322,7 @@ client.on("interactionCreate", interaction => {
         interaction.guild.channels.create(interaction.user.username, {
             type: "text",
             topic: `User ID: ${interaction.user.id}`,
-            parent: "958713793901363260", //Settare la categoria,
+            parent: "958747174693376111", //Settare la categoria,
             permissionOverwrites: [
                 {
                     id: interaction.guild.id,
