@@ -70,7 +70,7 @@ client.on("interactionCreate", interaction => {
                 
             ]
         }).then(canale => {
-            canale.send("Grazie per aver aperto un ticket, uno <@&910836547589373962> ti risponderà a breve!")
+            canale.send("Grazie per aver aperto un ticket, un <@&910836547589373962> ti risponderà a breve!")
         })
     }
 })
@@ -206,7 +206,7 @@ client.on("interactionCreate", interaction => {
                 }
             ]
         }).then(canale => {
-            canale.send("Grazie per aver aperto un ticket, uno <@&910836547589373962> ti risponderà a breve!")
+            canale.send("Grazie per aver aperto un ticket, un <@&910836547589373962> ti risponderà a breve!")
         })
     }
 })
