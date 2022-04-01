@@ -53,6 +53,7 @@ client.on("interactionCreate", interaction => {
         interaction.guild.channels.create(interaction.user.username, {
             type: "text",
             topic: `User ID: ${interaction.user.id}`,
+            parent: "959471398697451621",
             permissionOverwrites: [
                 {
                     id: interaction.guild.id,
@@ -185,6 +186,7 @@ client.on("interactionCreate", interaction => {
         interaction.guild.channels.create(interaction.user.username, {
             type: "text",
             topic: `User ID: ${interaction.user.id}`,
+            parent: "959471398697451621",
             permissionOverwrites: [
                 {
                     id: interaction.guild.id,
@@ -320,6 +322,7 @@ client.on("interactionCreate", interaction => {
         interaction.guild.channels.create(interaction.user.username, {
             type: "text",
             topic: `User ID: ${interaction.user.id}`,
+            parent: "959471398697451621",
             permissionOverwrites: [
                 {
                     id: interaction.guild.id,
