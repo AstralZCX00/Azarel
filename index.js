@@ -5,9 +5,6 @@ const client = new Discord.Client(
 
 client.login(process.env.token)
 
-require('dotenv').config()
-console.log(process.env)
-
 client.on("ready", () => {
 console.log("bot online")
 })
