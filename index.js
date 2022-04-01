@@ -53,7 +53,6 @@ client.on("interactionCreate", interaction => {
         interaction.guild.channels.create(interaction.user.username, {
             type: "text",
             topic: `User ID: ${interaction.user.id}`,
-            parent: "958747174693376111", //Settare la categoria,
             permissionOverwrites: [
                 {
                     id: interaction.guild.id,
