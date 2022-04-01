@@ -4,6 +4,7 @@ const client = new Discord.Client(
 );
 
 client.login(process.env.token)
+
 require("dotenv").config()
 
 client.on("ready", () => {
